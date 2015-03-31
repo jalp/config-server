@@ -13,3 +13,6 @@ spring:
         git:
           uri: https://github.com/jalp/config
           basedir: target/config
+security:
+  user:
+    password: '{cipher}89a7e63b8f4b624eb2c982868a86038b11222ee29934ddfc2afa5182a3b620df'
