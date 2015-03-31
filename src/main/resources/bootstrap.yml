@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: config_server
+  config:
+    name: config_server
