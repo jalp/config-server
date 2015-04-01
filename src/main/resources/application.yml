@@ -1,18 +1,32 @@
 server:
   port: 8888
 
+#management:
+#  context-path: /admin
+
 logging:
   level:
     com.netflix.discovery: 'OFF'
     org.springframework.cloud: 'DEBUG'
+
+#eureka:
+#  instance:
+#    leaseRenewalIntervalInSeconds: 10
+#    statusPageUrlPath: /admin/info
+#    healthCheckUrlPath: /admin/health
+#    metadataMap:
+#      password: ${security.user.password}
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
 
 spring:
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/jalp/config
-          basedir: target/config
+          uri: https://github.com/jalp/config-repo
+
 security:
   user:
     password: '{cipher}89a7e63b8f4b624eb2c982868a86038b11222ee29934ddfc2afa5182a3b620df'
